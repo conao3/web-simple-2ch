@@ -1,4 +1,4 @@
-FROM php:7.1-apache
+FROM php:7.4
 
 RUN apt-get update -y \
     && apt-get install -y --no-install-recommends \
@@ -13,6 +13,7 @@ RUN apt-get update -y \
         libxml2-dev \
         sqlite3 \
         unzip \
+        libonig-dev \
     && rm -rf /var/lib/apt/lists/*
 
 RUN git clone https://github.com/nikic/php-ast.git \
@@ -34,6 +35,6 @@ RUN docker-php-ext-install -j$(nproc) \
         readline \
     && pecl install solr
 
-RUN a2enmod rewrite
+# RUN a2enmod rewrite
 
 COPY --from=composer /usr/bin/composer /usr/bin/composer

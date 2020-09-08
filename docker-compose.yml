@@ -4,6 +4,7 @@ version: "3.7"
 
 services:
   web:
+    tty: true
     build: ./docker/web
     hostname: 'localhost'
     volumes:
