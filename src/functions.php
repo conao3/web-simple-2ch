@@ -18,3 +18,20 @@ function db()
 
     return $db;
 }
+
+/**
+ * @return string
+ */
+function greeting(\DateTimeInterface $dt)
+{
+    $hour = (int)$dt->format('H');
+
+    if (4 <= $hour && $hour < 10) {
+        return "お早うございます";
+    }
+    if (10 <= $hour && $hour < 17) {
+        return "こんにちは";
+    }
+
+    return "こんばんわ";
+}

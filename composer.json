@@ -8,6 +8,17 @@
             "email": "conao3@gmail.com"
         }
     ],
+    "autoload": {
+        "files": ["src/functions.php"],
+        "psr-4": {
+            "Simple2ch\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Simple2ch\\": "tests/"
+        }
+    },
     "require": {
         "vlucas/phpdotenv": "^5.1",
         "twig/twig": "^2.13",

@@ -18,3 +18,26 @@ $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
 $whoops->register();
 
 echo "こんにちはこんにちは";
+
+// 日本時間にセットしておく
+date_default_timezone_set('Asia/Tokyo');
+// 現在時刻のオブジェクト
+$now = new \DateTimeImmutable;
+
+// Twig
+$basedir = dirname(__DIR__);
+$loader = new \Twig_Loader_Filesystem($basedir . '/src/View/template');
+$twig   = new \Twig_Environment($loader, [
+    'cache' => $basedir . '/cache/twig',
+    'debug' => true,
+]);
+
+// $twig->render()でテンプレートを文字列に出力する
+// パラメータとして連想配列を渡してやると、テンプレート内で変数として利用できる
+$content = $twig->render('index.tpl.html', [
+    'greeting' => greeting($now),
+]);
+
+header('Content-Type: text/html; charset=utf-8');
+header('Content-Length: ' . strlen($content));
+echo $content;
