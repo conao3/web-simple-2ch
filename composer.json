@@ -1,0 +1,19 @@
+{
+    "name": "conao3/simple-2ch",
+    "description": "Simple 2ch build by PHP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Naoya Yamashita",
+            "email": "conao3@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.1",
+        "twig/twig": "^2.13",
+        "twig/extensions": "^1.5"
+    },
+    "require-dev": {
+        "filp/whoops": "^2.7"
+    }
+}
