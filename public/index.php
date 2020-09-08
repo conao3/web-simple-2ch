@@ -5,7 +5,7 @@
  * @copyright 2020 Naoya Yamashita
  * @license   MIT
  */
-namespace InspireBBS;
+namespace Simple2ch;
 
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
