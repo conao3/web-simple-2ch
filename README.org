@@ -21,6 +21,14 @@
 * Description
 Simple 2ch build by PHP.
 
+This project is a study from tadsan's article.
+- [[https://qiita.com/tadsan/items/cdbbb5b08591af2b110d][インスパイヤされて掲示板を作りたくなった(1)]]
+- [[https://qiita.com/tadsan/items/adaade6b675ac344f373][インスパイヤされて掲示板を作りたくなった(2)]]
+- [[インスパイヤされて掲示板を作りたくなった(3)][インスパイヤされて掲示板を作りたくなった(3)]]
+- [[インスパイヤされて掲示板を作りたくなった(4)][インスパイヤされて掲示板を作りたくなった(4)]]
+
+Original code is distributed under WTFPL.
+
 * Install
 
 * Usage

@@ -25,7 +25,10 @@ date_default_timezone_set('Asia/Tokyo');
 $now = new \DateTimeImmutable;
 
 // .env
-$dotenv = new \Dotenv\Dotenv(dirname(__DIR__));
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+// $dotenv = new \Dotenv\Dotenv(dirname(__DIR__));
+// $dotenv = Dotenv\Dotenv::create(dirname(__DIR__));
 $dotenv->overload();
 $dotenv->required('DB_DSN')->notEmpty();
 
