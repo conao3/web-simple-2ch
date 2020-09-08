@@ -22,7 +22,10 @@
     "require": {
         "vlucas/phpdotenv": "^5.1",
         "twig/twig": "^2.13",
-        "twig/extensions": "^1.5"
+        "twig/extensions": "^1.5",
+        "zonuexe/simple-routing": "^0.5.3",
+        "zonuexe/objectsystem": "^0.6.0",
+        "zonuexe/tetosql": "^0.1.0"
     },
     "require-dev": {
         "filp/whoops": "^2.7"

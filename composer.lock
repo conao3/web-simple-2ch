@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a0a49932d4e89ef008395481394d394f",
+    "content-hash": "abb6e544cd82ba765bd85e89930a8a3d",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -571,6 +571,138 @@
                 }
             ],
             "time": "2020-07-14T19:26:25+00:00"
+        },
+        {
+            "name": "zonuexe/objectsystem",
+            "version": "0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BaguettePHP/objectsystem.git",
+                "reference": "9a5f4413b82ea394c1018d40098269c86ac232c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BaguettePHP/objectsystem/zipball/9a5f4413b82ea394c1018d40098269c86ac232c1",
+                "reference": "9a5f4413b82ea394c1018d40098269c86ac232c1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5|>=7.0"
+            },
+            "require-dev": {
+                "phploc/phploc": "*",
+                "phpmd/phpmd": "@stable",
+                "phpunit/phpunit": "^5.5|^4.8",
+                "theseer/phpdox": "^0.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Teto\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "USAMI Kenta",
+                    "email": "tadsan@zonu.me"
+                }
+            ],
+            "description": "Object system for PHP",
+            "time": "2016-10-08T15:52:57+00:00"
+        },
+        {
+            "name": "zonuexe/simple-routing",
+            "version": "0.5.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BaguettePHP/TetoRouting.git",
+                "reference": "d7246eb865bfcd75667007a8278efbe644981cf2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BaguettePHP/TetoRouting/zipball/d7246eb865bfcd75667007a8278efbe644981cf2",
+                "reference": "d7246eb865bfcd75667007a8278efbe644981cf2",
+                "shasum": ""
+            },
+            "require": {
+                "zonuexe/objectsystem": "~0.5|~0.6"
+            },
+            "require-dev": {
+                "apigen/apigen": "^4.2@dev",
+                "phpunit/phpunit": "^4.8|^5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Teto\\Routing\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "USAMI Kenta",
+                    "email": "tadsan@zonu.me"
+                }
+            ],
+            "description": "Simple Web Application Router",
+            "keywords": [
+                "router"
+            ],
+            "time": "2017-02-15T18:33:13+00:00"
+        },
+        {
+            "name": "zonuexe/tetosql",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BaguettePHP/TetoSQL.git",
+                "reference": "fcac57d30a77598b8ff39f854f471631be0adcad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BaguettePHP/TetoSQL/zipball/fcac57d30a77598b8ff39f854f471631be0adcad",
+                "reference": "fcac57d30a77598b8ff39f854f471631be0adcad",
+                "shasum": ""
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.1 || ^1.1",
+                "phpunit/phpunit": " ^7.5 || ^4.8",
+                "theseer/phpdox": "^0.12.0"
+            },
+            "suggest": {
+                "ext-mysql": "MySQL support"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Teto\\SQL\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "pixiv Inc."
+                },
+                {
+                    "name": "USAMI Kenta",
+                    "email": "tadsan@zonu.me"
+                }
+            ],
+            "description": "Simple and secure SQL templating",
+            "keywords": [
+                "sql"
+            ],
+            "time": "2019-08-22T10:09:09+00:00"
         }
     ],
     "packages-dev": [
