@@ -1,54 +1,94 @@
+#+title: web-simple-2ch
 #+author: conao3
 #+date: <2020-03-20 Fri>
 
 [[https://github.com/conao3/web-simple-2ch][https://raw.githubusercontent.com/conao3/files/master/blob/headers/png/web-simple-2ch.png]]
 [[https://github.com/conao3/web-simple-2ch/blob/master/LICENSE][https://img.shields.io/github/license/conao3/web-simple-2ch.svg?style=flat-square]]
 [[https://github.com/conao3/web-simple-2ch/releases][https://img.shields.io/github/tag/conao3/web-simple-2ch.svg?style=flat-square]]
-[[https://github.com/conao3/web-simple-2ch/actions][https://img.shields.io/badge/patreon-become%20a%20patron-orange.svg?logo=patreon&style=flat-square]]
-[[https://twitter.com/conao_3][https://img.shields.io/badge/twitter-@conao__3-blue.svg?logo=twitter&style=flat-square]]
-[[https://conao3-support.slack.com/join/shared_invite/enQtNjUzMDMxODcyMjE1LWUwMjhiNTU3Yjk3ODIwNzAxMTgwOTkxNmJiN2M4OTZkMWY0NjI4ZTg4MTVlNzcwNDY2ZjVjYmRiZmJjZDU4MDE][https://img.shields.io/badge/chat-on_slack-blue.svg?logo=slack&style=flat-square]]
 
-* Table of Contents
-- [[#description][Description]]
-- [[#install][Install]]
-- [[#usage][Usage]]
-- [[#information][Information]]
-  - [[#community][Community]]
-  - [[#contribution][Contribution]]
-  - [[#license][License]]
-  - [[#author][Author]]
+* Overview
 
-* Description
-Simple 2ch build by PHP.
+A simple 2ch-style bulletin board built with PHP. This project serves as a hands-on study of web application development, following the excellent tutorial series by [[https://github.com/zonuexe][tadsan]].
 
-This project is a study from tadsan's article.
-- [[https://qiita.com/tadsan/items/cdbbb5b08591af2b110d][インスパイヤされて掲示板を作りたくなった(1)]]
-- [[https://qiita.com/tadsan/items/adaade6b675ac344f373][インスパイヤされて掲示板を作りたくなった(2)]]
-- [[インスパイヤされて掲示板を作りたくなった(3)][インスパイヤされて掲示板を作りたくなった(3)]]
-- [[インスパイヤされて掲示板を作りたくなった(4)][インスパイヤされて掲示板を作りたくなった(4)]]
+** Features
 
-Original code is distributed under WTFPL.
+- Lightweight bulletin board system
+- Docker-based development environment
+- Twig templating engine
+- Simple routing with [[https://github.com/zonuexe/simple-routing][simple-routing]]
+- Clean, maintainable code structure
 
-* Install
+* Requirements
 
-* Usage
+- Docker and Docker Compose
+- PHP 7.4 or later (for local development without Docker)
+- Composer
 
-* Information
-** Community
-All feedback and suggestions are welcome!
+* Getting Started
 
-You can use github issues, but you can also use [[https://conao3-support.slack.com/join/shared_invite/enQtNjUzMDMxODcyMjE1LWUwMjhiNTU3Yjk3ODIwNzAxMTgwOTkxNmJiN2M4OTZkMWY0NjI4ZTg4MTVlNzcwNDY2ZjVjYmRiZmJjZDU4MDE][Slack]]
-if you want a more casual conversation.
+** Using Docker (Recommended)
 
-** Contribution
-We welcome PR!
+Clone the repository:
 
-** License
+#+begin_src sh
+git clone https://github.com/conao3/web-simple-2ch.git
+cd web-simple-2ch
+#+end_src
+
+Start the development server:
+
+#+begin_src sh
+docker-compose up -d
+#+end_src
+
+Open your browser and navigate to =http://localhost:3939=.
+
+** Local Development
+
+Install dependencies:
+
+#+begin_src sh
+composer install
+#+end_src
+
+Configure your environment by copying =.env.example= to =.env= and updating the values as needed.
+
+* Project Structure
+
 #+begin_example
-  MIT License
-  Copyright (c) Naoya Yamashita - https://conao3.com
-  https://github.com/conao3/web-simple-2ch/blob/master/LICENSE
+web-simple-2ch/
+├── docker/          # Docker configuration files
+├── public/          # Web root directory
+│   └── index.php    # Application entry point
+├── src/             # Application source code
+├── tests/           # Test files
+├── composer.json    # PHP dependencies
+└── docker-compose.yml
 #+end_example
 
-** Author
+* Acknowledgments
+
+This project is based on the tutorial series by [[https://github.com/zonuexe][tadsan]]:
+
+- [[https://qiita.com/tadsan/items/cdbbb5b08591af2b110d][Part 1: Getting Started]]
+- [[https://qiita.com/tadsan/items/adaade6b675ac344f373][Part 2: Building the Foundation]]
+- [[https://qiita.com/tadsan/items/b4f6e9d90e5c1e40c498][Part 3: Adding Features]]
+- [[https://qiita.com/tadsan/items/9de85bb5b8b3ba5e7609][Part 4: Final Touches]]
+
+The original code from the tutorial is distributed under WTFPL.
+
+* Contributing
+
+Contributions are welcome. Feel free to open an issue for bug reports, feature requests, or questions. Pull requests are appreciated.
+
+* License
+
+#+begin_example
+MIT License
+Copyright (c) Naoya Yamashita - https://conao3.com
+https://github.com/conao3/web-simple-2ch/blob/master/LICENSE
+#+end_example
+
+* Author
+
 - Naoya Yamashita ([[https://github.com/conao3][conao3]])
