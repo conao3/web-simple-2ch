@@ -34,8 +34,8 @@ $dotenv->required('DB_DSN')->notEmpty();
 
 // Twig
 $basedir = dirname(__DIR__);
-$loader = new \Twig_Loader_Filesystem($basedir . '/src/View/template');
-$twig   = new \Twig_Environment($loader, [
+$loader = new \Twig\Loader\FilesystemLoader($basedir . '/src/View/template');
+$twig   = new \Twig\Environment($loader, [
     'cache' => $basedir . '/cache/twig',
     'debug' => true,
 ]);
