@@ -10,14 +10,12 @@ namespace Simple2ch;
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
 // エラーは漏らさず捕捉する
-error_reporting(E_ALL | E_STRICT);
+error_reporting(E_ALL);
 
 // カッコイイエラー画面を表示するための魔法の呪文
 $whoops = new \Whoops\Run;
 $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
 $whoops->register();
-
-echo "こんにちはこんにちは";
 
 // 日本時間にセットしておく
 date_default_timezone_set('Asia/Tokyo');
@@ -25,11 +23,10 @@ date_default_timezone_set('Asia/Tokyo');
 $now = new \DateTimeImmutable;
 
 // .env
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv = \Dotenv\Dotenv::createUnsafeImmutable(dirname(__DIR__));
 $dotenv->load();
 // $dotenv = new \Dotenv\Dotenv(dirname(__DIR__));
 // $dotenv = Dotenv\Dotenv::create(dirname(__DIR__));
-$dotenv->overload();
 $dotenv->required('DB_DSN')->notEmpty();
 
 // Twig
