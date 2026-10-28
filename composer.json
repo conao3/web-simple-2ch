@@ -20,11 +20,11 @@
         }
     },
     "require": {
-        "vlucas/phpdotenv": "^5.1",
+        "vlucas/phpdotenv": "^5.8",
         "twig/twig": "^3.27",
-        "zonuexe/simple-routing": "^0.5.3",
-        "zonuexe/objectsystem": "^0.6.0",
-        "zonuexe/tetosql": "^0.1.0"
+        "zonuexe/simple-routing": "^0.7",
+        "zonuexe/objectsystem": "^0.7",
+        "zonuexe/tetosql": "^0.6"
     },
     "require-dev": {
         "filp/whoops": "^2.7"

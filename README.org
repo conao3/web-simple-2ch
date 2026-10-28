@@ -21,7 +21,7 @@ A simple 2ch-style bulletin board built with PHP. This project serves as a hands
 * Requirements
 
 - Docker and Docker Compose
-- PHP 8.1 or later (for local development without Docker)
+- PHP 8.3 or later (for local development without Docker)
 - Composer
 
 * Getting Started
