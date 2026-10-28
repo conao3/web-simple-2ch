@@ -1,4 +1,4 @@
-FROM php:7.4
+FROM php:8.5
 
 RUN apt-get update -y \
     && apt-get install -y --no-install-recommends \
@@ -8,8 +8,6 @@ RUN apt-get update -y \
         libicu-dev \
         libgmp-dev \
         libmagic-dev \
-        libedit-dev \
-        libreadline-dev \
         libxml2-dev \
         sqlite3 \
         unzip \
@@ -32,7 +30,6 @@ RUN docker-php-ext-install -j$(nproc) \
         mbstring \
         pcntl \
         pdo_mysql \
-        readline \
     && pecl install solr
 
 # RUN a2enmod rewrite
