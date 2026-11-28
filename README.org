@@ -2,9 +2,11 @@
 #+author: conao3
 #+date: <2020-03-20 Fri>
 
-[[https://github.com/conao3/web-simple-2ch][https://raw.githubusercontent.com/conao3/files/master/blob/headers/png/web-simple-2ch.png]]
-[[https://github.com/conao3/web-simple-2ch/blob/master/LICENSE][https://img.shields.io/github/license/conao3/web-simple-2ch.svg?style=flat-square]]
-[[https://github.com/conao3/web-simple-2ch/releases][https://img.shields.io/github/tag/conao3/web-simple-2ch.svg?style=flat-square]]
+#+html: <p align="center"><img src="docs/assets/banner.png" alt="web-simple-2ch: A simple 2ch-style bulletin board written in PHP" width="880"></p>
+#+html: <p align="center"><strong>A simple 2ch-style bulletin board written in PHP</strong></p>
+#+html: <p align="center"><a href="LICENSE"><img src="https://img.shields.io/github/license/conao3/web-simple-2ch" alt="License"></a> <a href="https://github.com/conao3/web-simple-2ch/stargazers"><img src="https://img.shields.io/github/stars/conao3/web-simple-2ch?style=flat" alt="GitHub stars"></a></p>
+#+html: <p align="center"><a href="#overview">Overview</a> | <a href="#getting-started">Getting Started</a> | <a href="#contributing">Contributing</a> | <a href="#license">License</a></p>
+#+html: <h1>web-simple-2ch</h1>
 
 * Overview
 
