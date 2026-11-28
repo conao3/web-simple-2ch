@@ -43,6 +43,10 @@ docker-compose up -d
 
 Open your browser and navigate to =http://localhost:3939=.
 
+[[./images/top.png]]
+
+The top page in a local run. The greeting changes with the time of day, and the page contains no user data.
+
 ** Local Development
 
 Install dependencies:
